@@ -1,0 +1,52 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.f-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  min-width: 600px;
+}
+
+#container p {
+  padding: 0.25em 0.5em;
+  background: #f3f3f3;
+  border: 3px solid silver;
+  border-radius: 0.5em;
+  text-align: center;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#container p span {
+  position: fixed;
+  z-index: 1000;
+  background: #fff;
+  padding: 20px;
+  background: #f3f3f3;
+  border: 3px solid silver;
+  display: none;
+  top: 20px;
+  right: 20px;
+}
+p:hover > span {
+  display: block !important;
+}
+svg {
+  position: absolute;
+  z-index: -1;
+}
+
+.path {
+  stroke: silver;
+  fill: none;
+  stroke-width: 2;
+}
